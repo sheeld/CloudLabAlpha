@@ -1,0 +1,19 @@
+<div class="textwidget margin-top-30">
+  <p><em><strong>My Projects</strong></em></p>
+  
+</div>
+<div class="widget">
+  <strong ng-show="!vm.home">
+    <div class="project search bar">
+    
+  </div>
+  <img src="../images/projectimg.jpg"></img></strong>
+  <a href="/projects/create">
+<img src="../images/projectimg.jpg">
+</a>
+<div class="userinfo" ng-show="currentUser" ng-controller="RegistrationController">
+    <span class="userinfo">Hi {{firstname}}</span> 
+    <a ng-href="#/login" ng-click="logout()">logout</a>
+  </div>
+<div ng-init="user = <%- data %>"></div>
+</div>

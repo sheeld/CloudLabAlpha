@@ -1,0 +1,21 @@
+<div class="widget">
+  <form name="create-project-form" id="create-project-form" method="post">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required value="{{input.name}}" />
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <input type="text" id="description" name="description" required value="{{input.description}}" />
+    </div>
+
+<label for="coverArt">Cover Art</label> <input type="file" data-ng-file-select="onFileSelect($files)" accept="image/png, image/jpeg">
+<span data-ng-if="uploadInProgress">Upload progress: {{ uploadProgress }}</span>
+<img data-ng-src="uploadedImage" data-ng-if="uploadedImage">
+
+    <div class="form-submit">
+      <input type="submit" value="Create my project" />
+    </div>
+    <span style="color:red;">{{error}}</span>
+  </form>
+</div>
